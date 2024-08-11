@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+/********************  Loading Page ************************/
+.loadFont {
+    font-family: 'Poiret One', cursive;
+    text-align: center; /* Center text */
+}
+
+/* Progress Bar Placement & Styling */
+#progressive {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    text-align: center; /* Center text within #progressive */
+}
+
+/* Progress Bar Container */
+.progress {
+    background-color: #e0e0e0; /* Background color of the progress bar container */
+    height: 30px; /* Adjust as needed */
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    width: 0%; /* Initial width */
+    height: 100%; /* Full height of the container */
+    background-color: #4caf50; /* Color of the progress */
+    border-radius: 10px; /* Optional for rounded corners */
+    transition: width 0.25s ease-out; /* Smooth transition */
+}
+
+/* Transition speed for progress bar (used in JS animation) */
+.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}
+
+#shadow {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /* Optional shadow effect */
+}
